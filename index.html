@@ -1,66 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<!-- displays site properly based on user's device -->
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="./css/main.min.css" />
 
-	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-	<link rel="stylesheet" href="./css/main.min.css" />
+		<title>Frontend Mentor | Intro component with sign up form</title>
 
-	<title>Frontend Mentor | Intro component with sign up form</title>
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
 
-	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-	<style>
-		.attribution {
-			font-size: 11px;
-			text-align: center;
-		}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
 
-		.attribution a {
-			color: hsl(228, 45%, 44%);
-		}
-	</style>
-</head>
+	<body>
+		<div class="wrapper">
+			<main>
+				<div class="flex-container">
+					<div class="col-6 firstcolumn">
+						<h1>Learn to code by watching others</h1>
+						<p>
+							See how experienced developers solve problems in
+							real-time. Watching scripted tutorials is great, but
+							understanding how developers think is invaluable.
+						</p>
+					</div>
+					<div class="col-6">
+						<button class="btn btn--blue">
+							Try it free 7 days then $20/mo. thereafter
+						</button>
+						<form class="form" id="form">
+							<div class="form__control">
+								<input
+									class="input"
+									type="text"
+									placeholder="First Name"
+									id="firstname"
+								/>
+							</div>
+							<div class="form__control">
+								<input
+									class="input"
+									type="text"
+									placeholder="Last Name"
+									id="lastname"
+								/>
+							</div>
 
-<body>
-	<div class="wrapper">
-		<main>
-			<div class="flex-container">
-				<div class="col-6 firstcolumn">
-					<h1>Learn to code by watching others</h1>
-					<p>
-						See how experienced developers solve problems in real-time.
-						Watching scripted tutorials is great, but understanding how
-						developers think is invaluable.
-					</p>
-				</div>
-				<div class="col-6">
-					<button class="btn btn--blue">
-						Try it free 7 days then $20/mo. thereafter
-					</button>
-					<div class="form">
-						<input class="input" placeholder="First Name">
-						<input class="input" placeholder="Last Name">
-						<input class="input" placeholder="Email Address">
-						<input class="input" placeholder="Password">
-						<input class="btn btn--green" type="submit" value="Claim your free trial">
-						<p class="terms">By clicking the button, you are
-							agreeing to our <a class="terms__link" href="#terms">Terms and Services</a></p>
+							<div class="form__control">
+								<input
+									class="input"
+									type="email"
+									placeholder="Email Address"
+									id="email"
+								/>
+							</div>
+
+							<div class="form__control">
+								<input
+									class="input"
+									type="password"
+									placeholder="Password"
+									id="password"
+								/>
+							</div>
+
+							<input
+								class="btn btn--green"
+								type="submit"
+								value="Claim your free trial"
+							/>
+							<p class="terms">
+								By clicking the button, you are agreeing to our
+								<a class="terms__link" href="#terms"
+									>Terms and Services</a
+								>
+							</p>
+						</form>
 					</div>
 				</div>
-			</div>
-		</main>
-		<footer>
-			<p class="attribution">
-				Challenge by
-				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
-					href="https://github.com/thomasjonstrup">Thomas Jonstrup</a>.
-			</p>
-		</footer>
-
-	</div>
-</body>
-
+			</main>
+			<footer>
+				<p class="attribution">
+					Challenge by
+					<a
+						href="https://www.frontendmentor.io?ref=challenge"
+						target="_blank"
+						>Frontend Mentor</a
+					>. Coded by
+					<a href="https://github.com/thomasjonstrup"
+						>Thomas Jonstrup</a
+					>.
+				</p>
+			</footer>
+		</div>
+	</body>
+	<script src="./js/main.js"></script>
 </html>
